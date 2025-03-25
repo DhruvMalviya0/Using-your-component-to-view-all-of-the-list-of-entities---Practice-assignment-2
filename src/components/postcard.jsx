@@ -8,7 +8,8 @@ const PostCard = ({ profileImage, username, content, isLiked }) => {
         <img
           src={profileImage}
           alt={username}
-          className="w-10 h-10 rounded-full border"
+          style={{ width: '300px', height: '300px', objectFit: 'cover' }}
+          className="rounded-lg border"
         />
         <h3 className="text-lg font-semibold">{username}</h3>
       </div>
